@@ -1,5 +1,9 @@
 # docker-openemm
-Sistema Openemm Dockerizado!
+Sistema Openemm Dockerizado
+
+## Pré-requisitos
+
+1. Em sistemas Gnu/Linux, certificar-se de que o Docker está instalado e corretamente configurado em sua distribuição. 
 
 ## Instalação
 
@@ -7,14 +11,12 @@ Sistema Openemm Dockerizado!
 
 ``` $docker build -t custom/openemm . ``` 
 
-**Nota:**
+> *Não esquecer do ponto no final do comando*
 
-> Não esquecer do ponto no final do comando
-
-*Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte*
+```*Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte*```
 
 
-2. Certifique-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
+2. Certificar-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
 
 ##### docker-compose.yaml
     openemm:
@@ -52,15 +54,15 @@ Sistema Openemm Dockerizado!
 	
 ## Procedimentos
 
-3. Execute o procedimento abaixo:
+1. Subir os conteineres, utilizando o procedimento a seguir:
 
 **$docker-compose up**
 
-4. Em outro terminal, acesse o diretório e certifique-se de que o docker-compose foi executado no ambiente. Utilize o procedimento abaixo para inspecionar:
+2. Certificar-se de que o docker-compose foi executado no ambiente. Em outro terminal, acesse o diretório onde os arquivos foram clonados e uUtilize o procedimento abaixo para inspecionar:
 
 **$docker-compose ps**
 
-5. Verifique a porta traduzida dinamicamente para a porta 8080 do Tomcat, onde a aplicação é executada, vide exemplo abaixo:
+3. Verifique a porta traduzida dinamicamente para a porta 8080 do Tomcat, onde a aplicação é executada, vide exemplo abaixo:
 
 
 
