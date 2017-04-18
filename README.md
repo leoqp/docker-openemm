@@ -5,7 +5,7 @@ Sistema Openemm Dockerizado!
 
 1. Construir a imagem:
 
-**$docker build -t custom/openemm .**
+| **$docker build -t custom/openemm .** |
 
 *Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte*
 
@@ -14,14 +14,14 @@ Sistema Openemm Dockerizado!
 
 ##### docker-compose.yaml
     openemm:
-    	image: serpro/openemm
-  	  hostname: localhost.localdomain
-	    restart: always
-	    ports:
-        	- 8080
-	    links:
-        	- mysql:MYSQL
-	        - mail:MAIL
+    	image: custom/openemm
+  	hostname: localhost.localdomain
+	restart: always
+	ports:
+           - 8080
+	links:
+           - mysql:MYSQL
+	   - mail:MAIL
     	environment:
         	- OPEN_EMM_URL=http://emkt.openemm.local
 	        - OPEN_EMM_BOUNCE_DOMAIN=emkt.openemm.local  
