@@ -16,6 +16,7 @@ $git clone [url]
 > *Para mais informações, consultar as urls a seguir:
 
 [Instalando o git](https://git-scm.com/book/pt-br/v1/Primeiros-passos-Instalando-Git).
+
 [Clonando um repositório existente](https://git-scm.com/book/pt-br/v1/Git-Essencial-Obtendo-um-Reposit%C3%B3rio-Git#Clonando-um-Reposit%C3%B3rio-Existente).
 
 
