@@ -11,7 +11,7 @@ Sistema Openemm Dockerizado
 
 ``` $docker build -t custom/openemm . ``` 
 
-> *Não esquecer do ponto no final do comando*
+- [x] Não esquecer do ponto no final do comando
 
 ```*Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte*```
 
