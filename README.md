@@ -78,7 +78,17 @@ $docker-compose ps
 3. Verifique a porta traduzida dinamicamente para a porta 8080 do Tomcat, onde a aplicação é executada, vide exemplo abaixo:
 
 ```
-
+         Name                       Command               State                Ports              
+-------------------------------------------------------------------------------------------------
+2015r3serpro_mysql_1     /run.sh                          Up      3306/tcp                        
+2015r3serpro_openemm_1   /usr/bin/supervisord -c /e ...   Up      25/tcp, 0.0.0.0:32770->8080/tcp 
 ```
 
+> *Neste caso, a porta 32770 foi utilizada para traduzir a porta 8080 do conteiner WEB*
+
+4. Acessar a URL da aplicação utilizando o endereço e a porta traduzida:
+
+```
+http://localhost:32770 
+```
 
