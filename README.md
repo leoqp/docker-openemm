@@ -5,7 +5,7 @@ Sistema Openemm Dockerizado
 
 1. Em sistemas Gnu/Linux, certificar-se de que o Docker está instalado e corretamente configurado em sua distribuição. 
 
-> *É sugerida a documentação do link abaixo:*
+> *É sugerida a documentação do link abaixo, no caso de sistemas Debian/Ubuntu:*
 
 [Documentação Oficial Docker](https://docs.docker.com/engine/installation/linux/ubuntu/).
 
