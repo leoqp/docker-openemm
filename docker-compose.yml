@@ -1,12 +1,11 @@
 openemm:
-    image: serpro/openemm
+    image: custom/openemm
     hostname: localhost.localdomain
     restart: always
     ports:
         - 8080
     links:
         - mysql:MYSQL
-        - mail:MAIL
     environment:
         - OPEN_EMM_URL=http://emkt.openemm.local
         - OPEN_EMM_BOUNCE_DOMAIN=emkt.openemm.local  
@@ -31,12 +30,3 @@ mysql:
        - mysql:/var/lib/mysql
     environment:
        - MYSQL_PASS=openemm1241343
-
-mail:
- image: catatnight/postfix
- restart: always
- ports:
-     - 25
- environment:
-   smtp_user: "openemm:1234567fsdfsg"
-   maildomain: "mx.local"

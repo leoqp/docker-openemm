@@ -1,13 +1,17 @@
 # docker-openemm
-OpenEMM System dockerized!
+Sistema Openemm Dockerizado!
 
-### Installation
+### Instalação
 
-Pull image:
+1. Construir a imagem:
 
-	docker pull leoqp/openemm
+	docker build -t custom/openemm .
+
+Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no próximo passo -  docker-compose.
 	
-### Usage with docker-compose
+2. Certifique-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
+
+### Uso com o docker-compose
     openemm:
     	image: serpro/openemm
   	  hostname: localhost.localdomain
@@ -33,4 +37,25 @@ Pull image:
         	- MAIL_ADDRESSES=newsletter info
 	#        - 'MAIL_HOST=mx.local'
 	#        - 'MAIL_USERNAME_AND_PASSWORD=username:password'
+
+mysql:
+    restart: always
+    image: tutum/mysql
+    volumes:
+       - mysql:/var/lib/mysql
+    environment:
+       - MYSQL_PASS=openemm1241343
+
+3. Execute o procedimento abaixo:
+
+docker-compose up
+
+4. Em outro terminal, acesse o diretório e certifique-se de que o docker-compose foi executado no ambiente. Utilize o procedimento abaixo para inspecionar:
+
+docker-compose ps
+
+5. Verifique a porta traduzida dinamicamente para a porta 8080 do Tomcat, onde a aplicação é executada, vide exemplo abaixo:
+
+
+
 
