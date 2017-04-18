@@ -1,7 +1,7 @@
 # docker-openemm
 Sistema Openemm Dockerizado!
 
-### Instalação
+## Instalação
 
 1. Construir a imagem:
 
@@ -11,7 +11,7 @@ Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo D
 	
 2. Certifique-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
 
-### docker-compose.yaml
+#### docker-compose.yaml
     openemm:
     	image: serpro/openemm
   	  hostname: localhost.localdomain
@@ -45,7 +45,7 @@ Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo D
        	environment:
          	 - MYSQL_PASS=openemm1241343	
 	
-### Procedimentos
+## Procedimentos
 
 3. Execute o procedimento abaixo:
 
