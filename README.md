@@ -3,26 +3,12 @@ Sistema Openemm Dockerizado
 
 ## Pré-requisitos
 
-1. Em sistemas Gnu/Linux, certificar-se de que o Docker está instalado e corretamente configurado em sua distribuição. Para sistemas Ubuntu/Debian, é sugerido o link abaixo:
+1. Em sistemas Gnu/Linux, certificar-se de que o Docker está instalado e corretamente configurado em sua distribuição. 
+
+*É sugerida a documentação do link abaixo:*
 
 [Documentação Oficial Docker](https://docs.docker.com/engine/installation/linux/ubuntu/).
 
-##### Receita de bolo:
-```
-Procedimentos para instalação do docker em sistemas Debian/Ubuntu:
-
-1. Instalar os pacotes
-
-$sudo apt-get install docker.io docker-compose
-
-2. Adicionar usuário corrente ao grupo docker
-
-$sudo gpasswd -a $(whoami) docker
-
-3. Certificar-se de que estar conectando ao Daemon Docker
-
-$docker ps
-```
 
 ## Instalação
 
@@ -35,12 +21,11 @@ $docker build -t custom/openemm .
 *Não esquecer do ponto no final do comando*
 
 ```
-Obs: 
 Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile. 
 ```
 
 
-2. Certificar-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
+2. Certificar-se de que existe o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
 
 ##### docker-compose.yaml
     openemm:
