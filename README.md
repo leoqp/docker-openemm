@@ -35,9 +35,9 @@ Este processo utilizará o conjunto de procedimentos descritos no arquivo Docker
 ```
 
 
-2. Certificar-se de que existe o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
+2. Certificar-se de que existe o arquivo docker-compose.yml no diretório corrente, com o conteúdo abaixo:
 
-##### docker-compose.yaml
+##### docker-compose.yml
     openemm:
     	image: custom/openemm
   	hostname: localhost.localdomain
