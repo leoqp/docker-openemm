@@ -44,9 +44,9 @@ Este processo utilizará o conjunto de procedimentos descritos no arquivo Docker
 	restart: always
 	ports:
            - 8080
+           - 25
 	links:
            - mysql:MYSQL
-	   - mail:MAIL
     	environment:
         	- OPEN_EMM_URL=http://emkt.openemm.local
 	        - OPEN_EMM_BOUNCE_DOMAIN=emkt.openemm.local  
