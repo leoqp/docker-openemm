@@ -4,9 +4,9 @@ Sistema Openemm Dockerizado!
 ## Instalação
 
 1. Construir a imagem:
- docker build -t custom/openemm .
+**$docker build -t custom/openemm .**
 
-* Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no próximo passo -  docker-compose.
+*Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte*
 
 
 2. Certifique-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
@@ -49,11 +49,11 @@ Sistema Openemm Dockerizado!
 
 3. Execute o procedimento abaixo:
 
-docker-compose up
+**$docker-compose up**
 
 4. Em outro terminal, acesse o diretório e certifique-se de que o docker-compose foi executado no ambiente. Utilize o procedimento abaixo para inspecionar:
 
-docker-compose ps
+**$docker-compose ps**
 
 5. Verifique a porta traduzida dinamicamente para a porta 8080 do Tomcat, onde a aplicação é executada, vide exemplo abaixo:
 
