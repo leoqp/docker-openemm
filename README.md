@@ -9,11 +9,14 @@ Sistema Openemm Dockerizado
 
 1. Construir a imagem:
 
-``` $docker build -t custom/openemm . ``` 
+``` $docker build -t custom/openemm .
+``` 
 
 - [x] Não esquecer do ponto no final do comando
 
-```*Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte*```
+```
+Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte
+```
 
 
 2. Certificar-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
