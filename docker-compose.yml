@@ -4,6 +4,7 @@ openemm:
     restart: always
     ports:
         - 8080
+        - 25 
     links:
         - mysql:MYSQL
     environment:
