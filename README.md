@@ -43,8 +43,8 @@ Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo D
     	   volumes:
       	    - mysql:/var/lib/mysql
        	environment:
-         	 - MYSQL_PASS=openemm1241343
-
+         	 - MYSQL_PASS=openemm1241343	
+	
 ### Procedimentos
 
 3. Execute o procedimento abaixo:
