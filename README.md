@@ -5,7 +5,11 @@ Sistema Openemm Dockerizado!
 
 1. Construir a imagem:
 
-``` $docker build -t custom/openemm . ``` -> *Não esquecer do _ponto_ no final do comando*
+``` $docker build -t custom/openemm . ``` 
+
+**Nota:**
+
+> Não esquecer do ponto no final do comando
 
 *Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. Esta imagem será utilizada no passo seguinte*
 
