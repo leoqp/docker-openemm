@@ -11,15 +11,13 @@ Sistema Openemm Dockerizado
 
 ``` 
 $docker build -t custom/openemm .
-
 ``` 
 
-- [x] Não esquecer do ponto no final do comando
+*Não esquecer do ponto no final do comando*
 
 ```
 Obs: 
-Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile para construir a imagem custom/openemm. 
-
+Este processo utilizará o conjunto de procedimentos descritos no arquivo Dockerfile. 
 ```
 
 
@@ -65,14 +63,12 @@ Este processo utilizará o conjunto de procedimentos descritos no arquivo Docker
 
 ```
 $docker-compose up
-
 ```
 
 2. Certificar-se de que o docker-compose foi executado no ambiente. Em outro terminal, acesse o diretório onde os arquivos foram clonados e uUtilize o procedimento abaixo para inspecionar:
 
 ```
 $docker-compose ps
-
 ```
 
 3. Verifique a porta traduzida dinamicamente para a porta 8080 do Tomcat, onde a aplicação é executada, vide exemplo abaixo:
