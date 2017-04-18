@@ -3,7 +3,26 @@ Sistema Openemm Dockerizado
 
 ## Pré-requisitos
 
-1. Em sistemas Gnu/Linux, certificar-se de que o Docker está instalado e corretamente configurado em sua distribuição. 
+1. Em sistemas Gnu/Linux, certificar-se de que o Docker está instalado e corretamente configurado em sua distribuição. Para sistemas Ubuntu/Debian, é sugerido o link abaixo:
+
+[Documentação Oficial Docker](https://docs.docker.com/engine/installation/linux/ubuntu/).
+
+##### Receita de bolo:
+```
+Procedimentos para instalação do docker em sistemas Debian/Ubuntu:
+
+1. Instalar os pacotes
+
+$sudo apt-get install docker.io docker-compose
+
+2. Adicionar usuário corrente ao grupo docker
+
+$sudo gpasswd -a $(whoami) docker
+
+3. Certificar-se de que estar conectando ao Daemon Docker
+
+$docker ps
+```
 
 ## Instalação
 
