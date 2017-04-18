@@ -94,7 +94,7 @@ $docker-compose ps
 2015r3serpro_openemm_1   /usr/bin/supervisord -c /e ...   Up      0.0.0.0:32772->25/tcp, 0.0.0.0:32771->8080/tcp 
 ```
 
-> *Neste caso, a porta 32770 foi utilizada para traduzir a porta 8080 do conteiner WEB*
+> *Neste caso, a porta 32771 foi utilizada para traduzir a porta 8080 do conteiner WEB*
 
 4. Acessar a URL da aplicação utilizando o endereço e a porta traduzida:
 
