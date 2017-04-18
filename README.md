@@ -37,13 +37,13 @@ Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo D
         	- MAIL_ADDRESSES=newsletter info
 	#        - 'MAIL_HOST=mx.local'
 	#        - 'MAIL_USERNAME_AND_PASSWORD=username:password'
-   mysql:
-       restart: always
-       image: tutum/mysql
-       volumes:
-          - mysql:/var/lib/mysql
-       environment:
-          - MYSQL_PASS=openemm1241343
+	   mysql:
+	       restart: always
+  	     image: tutum/mysql
+    	   volumes:
+      	    - mysql:/var/lib/mysql
+       	environment:
+         	 - MYSQL_PASS=openemm1241343
 
 ### Procedimentos
 
