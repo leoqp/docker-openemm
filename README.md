@@ -11,7 +11,7 @@ Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo D
 	
 2. Certifique-se de que há o arquivo docker-compose.yaml no diretório corrente, com o conteúdo abaixo:
 
-### Uso com o docker-compose
+### docker-compose.yaml
     openemm:
     	image: serpro/openemm
   	  hostname: localhost.localdomain
@@ -37,14 +37,15 @@ Obs: Este processo utilizará o conjunto de procedimentos descritos no arquivo D
         	- MAIL_ADDRESSES=newsletter info
 	#        - 'MAIL_HOST=mx.local'
 	#        - 'MAIL_USERNAME_AND_PASSWORD=username:password'
+   mysql:
+       restart: always
+       image: tutum/mysql
+       volumes:
+          - mysql:/var/lib/mysql
+       environment:
+          - MYSQL_PASS=openemm1241343
 
-mysql:
-    restart: always
-    image: tutum/mysql
-    volumes:
-       - mysql:/var/lib/mysql
-    environment:
-       - MYSQL_PASS=openemm1241343
+### Procedimentos
 
 3. Execute o procedimento abaixo:
 
